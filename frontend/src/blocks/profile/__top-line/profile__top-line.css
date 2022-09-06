@@ -1,0 +1,24 @@
+.profile__top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+@media screen and (max-width: 880px) {
+  .profile__top-line {
+    max-width: 282px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile__top-line {
+    margin-left: 37px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile__top-line {
+    max-width: calc(282px - 2*28px);
+  }
+}

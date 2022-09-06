@@ -1,0 +1,12 @@
+.register__sign-in-alternative {
+  width: 358px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 460px) {
+  .register__sign-in-alternative {
+    max-width: 260px;
+  }
+}

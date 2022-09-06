@@ -1,0 +1,17 @@
+.login__submitButton {
+  width: 358px;
+  height: 50px;
+  margin: 216px 0 0 0;
+  font-size: 18px;
+  line-height: 22px
+}
+
+.login__submitButton:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 460px) {
+  .login__submitButton{
+    max-width: 260px;
+  }
+}
