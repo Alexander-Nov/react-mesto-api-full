@@ -187,9 +187,9 @@ function App() {
   };
 
 
-  const handleSignUpSubmit = ({ email, password, name, about, avatar }) => {
+  const handleSignUpSubmit = ({ email, password }) => {
     setIsLoading(true);
-    register(password, email, name, about, avatar)
+    register(password, email)
     .then ((res) => {
         setIsRegistered(true);
         setInfoTooltipMessage("Вы успешно зарегистрировались!");

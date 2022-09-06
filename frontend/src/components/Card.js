@@ -5,7 +5,6 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   const currentUser = React.useContext(CurrentUserContext);
 
   const isOwn = card.owner === currentUser._id; //я ли владелец карточки
-  // console.log(card.owner);
   const cardDeleteButtonClassName = `element__delete ${
     isOwn ? "" : "element__delete_hidden"
   }`; // Создаём переменную, которую после зададим в `className` для кнопки удаления

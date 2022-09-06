@@ -8,14 +8,14 @@ const getResponseData = (res) => {
   return Promise.reject(res.statusText);
 }
 
-export const register = (password, email, name, about, avatar) => {
+export const register = (password, email) => {
   return fetch(`${BASE_URL}/signup`, {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({password, email, name, about, avatar})
+    body: JSON.stringify({password, email})
   })
   .then((responce) => getResponseData(responce));
 };

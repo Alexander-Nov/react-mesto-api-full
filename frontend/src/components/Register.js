@@ -3,23 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Register({ onAddUser, isLoading }) {
 
-  const [name, setName] = React.useState("");
-  const [about, setAbout] = React.useState("");
-  const [avatar, setAvatar] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
-
-  function handleName(e) {
-    setName(e.target.value);
-  }
-
-  function handleAbout(e) {
-    setAbout(e.target.value);
-  }
-
-  function handleAvatar(e) {
-    setAvatar(e.target.value);
-  }
 
   function handleEmail(e) {
     setEmail(e.target.value);
@@ -33,10 +18,7 @@ function Register({ onAddUser, isLoading }) {
     e.preventDefault();
     onAddUser({
       email,
-      password,
-      name,
-      about,
-      avatar
+      password
     });
   }
 
@@ -45,9 +27,6 @@ function Register({ onAddUser, isLoading }) {
       <h2 className="register__title">Регистрация</h2>
       <form className="register__form" onSubmit={handleSubmit} name="registerForm">
         <fieldset className="register__fieldset">
-          <input type="name" onChange={handleName} value={name} className="register__input register__inputName" placeholder="Name"/>
-          <input type="about" onChange={handleAbout} value={about} className="register__input register__inputName" placeholder="About"/>
-          <input type="avatar" onChange={handleAvatar} value={avatar} className="register__input register__inputName" placeholder="Avatar"/>
           <input type="email" onChange={handleEmail} value={email} className="register__input register__inputName" placeholder="Email"/>
           <input type="password" onChange={handlePass} value={password} className="register__input register__inputPass" placeholder="Пароль"/>
           <button type="submit" className="register__submitButton">{isLoading ? "Отправляем запрос..." : "Зарегистрироваться"}</button>
