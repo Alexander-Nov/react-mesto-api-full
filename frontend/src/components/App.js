@@ -180,6 +180,8 @@ function App() {
       })
       .catch((err) => {
         console.log(err);
+        setInfoTooltipMessage(`Ошибка создания карточки: ${err}`);
+      setIsInfoTooltipOpen(true);
       })
       .finally(() => {
         setIsLoading(false);
