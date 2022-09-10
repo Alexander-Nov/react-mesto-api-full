@@ -17,6 +17,9 @@ Frontend-часть проекта выполнена на React.
 За распределение запросов отвечает HTTP-сервер Nginx.
 
 
-# Информация о размещении проекта в сети интернет:
+## Информация о размещении проекта в сети интернет:
 IP-адрес: 51.250.96.214
-URL страницы: http://novoselov.nomorepartiesxyz.ru/
+
+URL страницы: https://novoselov.nomorepartiesxyz.ru/
+
+API-сервер: https://api.novoselov.nomoredomains.sbs
